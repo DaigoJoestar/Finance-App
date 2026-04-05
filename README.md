@@ -83,7 +83,7 @@ This makes the code testable, maintainable, and reusable.
 
 ```bash
 # Clone the repository
-git clone https://github.com/DaigoJoestar/finance_dashboard.git
+git clone https://github.com/DaigoJoestar/Finance-App.git
 cd finance_dashboard
 
 # Build and start the container
