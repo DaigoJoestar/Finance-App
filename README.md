@@ -9,21 +9,20 @@
 
 ---
 
-## 📖 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Architecture (MVC)](#architecture-mvc)
 - [Data Model](#data-model)
 - [Quick Start with Docker](#quick-start-with-docker)
-- [Local Setup (without Docker)](#local-setup-without-docker)
 - [API Endpoints](#api-endpoints)
-- [Role‑Based Access](#role‑based-access)
+- [Role‑Based Access](#role-based-access)
 - [Environment Variables](#environment-variables)
 - [Project Structure](#project-structure)
 
 ---
 
-## ✨ Features
+##  Features
 
 | Area | Capabilities |
 |------|--------------|
@@ -39,7 +38,7 @@
 
 ---
 
-## 🏗 Architecture (MVC)
+##  Architecture (MVC)
 
 The project follows a clean **Model‑View‑Controller** separation:
 
@@ -55,7 +54,7 @@ This makes the code testable, maintainable, and reusable.
 
 ---
 
-## 🗄 Data Model
+##  Data Model
 
 ### `User`
 | Column | Type | Notes |
@@ -80,7 +79,7 @@ This makes the code testable, maintainable, and reusable.
 
 ---
 
-## 🐳 Quick Start with Docker
+##  Quick Start with Docker
 
 ```bash
 # Clone the repository
@@ -132,7 +131,8 @@ Dashboard (analyst+admin only)
 
 All dashboard endpoints accept an optional ?year=YYYY filter (except recent and trends).
 ---
-## 🔐 Role‑Based Access
+<a id="role-based-access"></a>
+##  Role‑Based Access
 | Role | Permissions |
 |--------|-----------|
 | `viewer` |	View financial records (GET /api/records) |
@@ -141,7 +141,7 @@ All dashboard endpoints accept an optional ?year=YYYY filter (except recent and 
 
 Enforced via @role_required('role') decorator.
 ---
-## 🔧 Environment Variables
+##  Environment Variables
 Create a .env file (ignored by Git) for secrets:
 
 
@@ -151,7 +151,7 @@ SECRET_KEY	dev-secret-key	Flask session secret
 DATABASE_URL	sqlite:///finance.db	SQLAlchemy connection string
 
 ---
-## 📁 Project Structure
+##  Project Structure
 ```text
 finance_dashboard/
 ├── app.py                 # App factory & CLI commands
